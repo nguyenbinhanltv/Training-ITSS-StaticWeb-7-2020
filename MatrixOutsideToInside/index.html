@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game Studio</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Game Studio</h1>
+            <ul>
+                <li><a href="#login" class="login">Login</a></li>
+                <li><a href="#page-1" class="page-1">Matrix</a></li>
+                <li><a href="#page-2" class="page-2">2</a></li>
+                <li><a href="#page-3" class="page-3">3</a></li>
+                <li><a href="#page-4" class="page-4">4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="login">
+            <div class="login-sign-in" id="login-sign-in">
+                <form action="">
+                    <h1>
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" class="input-information" id="input-username" maxlength="32"
+                            placeholder="Enter your username" required>
+                    </h1>
+                    <h1>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" class="input-information" id="input-password"
+                            maxlength="32" placeholder="Enter your password" required>
+                    </h1>
+                    <button type="submit" id="btn-sign-in">Sign In</button>
+                    <button type="submit" id="btn-sign-up">Sign Up</button>
+                </form>
+            </div>
+            <!--<div class="login-sign-up" id="login-sign-up">
+                <form action="">
+                    <h1>
+                       <div style="width: 40%; display: inline-block; text-align: left;"> <label  for="fullname">Full Name:</label></div>
+                        <input type="text" name="fullname" class="input-information" id="input-fullname" maxlength="32" placeholder="Enter your fullname" required>
+                    </h1>
+                    <h1>
+                        <div style="width: 40%; display: inline-block; text-align: left;"><label for="email">Email:</label></div>
+                        <input type="email" name="email" class="input-information" maxlength="32" placeholder="Enter your email" required>
+                    </h1>
+                    <h1>
+                        <div style="width: 40%; display: inline-block; text-align: left;"><label for="conform-email">ConformEmail:</label> </div>
+                        <input type="email" name="conform-email" class="input-information" maxlength="32" placeholder="Enter your email" required>
+                    </h1>
+                    <h1>
+                        <div style="width: 40%; display: inline-block; text-align: left;"><label for="phone">Phone:</label> </div>
+                        <input type="text" name="phone" class="input-information" maxlength="32" placeholder="Enter your phone" required>
+                    </h1>
+                    <h1>
+                        <div style="width: 40%; display: inline-block; text-align: left;"><label for="password">Password:</label></div>
+                        <input type="password" name="password" class="input-information" maxlength="32" placeholder="Enter your password" required>
+                    </h1>
+                    <button type="button" id="btn-sign-up2">Sign Up</button>
+                </form>
+            </div>-->
+        </section>
+        <section id="page-1">
+            <div>
+                <h2 class="writing">Draw Matrix</h2>
+                <input type="text" class="matrix" id="first-input" placeholder="input your rows">
+                <input type="text" class="matrix" id="second-input" placeholder="input your cols">
+                <div class="writing" id="output-matrix">
+                </div>
+            </div>
+        </section>
+        <section id="page-2">
+            <h2>Page 2</h2>
+        </section>
+        <section id="page-3">
+            <h2>Page 3</h2>
+        </section>
+        <section id="page-4">
+            <h2>Page 4</h2>
+        </section>
+    </main>
+    <script src="./src/loginForm.js"></script>
+    <script src="./src/matrix.js"></script>
+</body>
+
+</html>

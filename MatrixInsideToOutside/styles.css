@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+}
+
+header {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .4);
+    position: sticky;
+    top: 0px;
+    background: white;
+}
+
+nav {
+    min-height: 10vh;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1, nav ul {
+    font-size: 1.5rem;
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2 {
+    font-size: 3rem;
+    color: white;
+}
+
+#login {
+    background: linear-gradient(to right, #1d976c, #93f9b9);
+}
+
+.login {
+    padding: 8px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.login:hover {
+    background: linear-gradient(to right, #1d976c, #93f9b9);
+    box-shadow: 0px 4px  8px 0px;
+    color: white;
+    transition: 0.4s;
+}
+
+#page-1 {
+    background: linear-gradient(to right, #4776e6, #8e54e9);
+}
+
+.page-1 {
+    padding: 8px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.page-1:hover {
+    background: linear-gradient(to right, #4776e6, #8e54e9);
+    box-shadow: 0px 4px  8px 0px;
+    color: white;
+    transition: 0.4s;
+}
+
+#page-2 {
+    background: linear-gradient(to right, #f12711, #f5af19);
+}
+
+.page-2 {
+    padding: 8px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.page-2:hover {
+    background: linear-gradient(to right, #f12711, #f5af19);
+    box-shadow: 0px 4px  8px 0px;
+    color: white;
+    transition: 0.4s;
+}
+
+#page-3 {
+    background: linear-gradient(to right, #1d2b64, #f8cdda);
+}
+
+.page-3 {
+    padding: 8px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.page-3:hover {
+    background: linear-gradient(to right, #1d2b64, #f8cdda);
+    box-shadow: 0px 4px  8px 0px;
+    color: white;
+    transition: 0.4s;
+}
+
+#page-4 {
+    background: linear-gradient(to right, #4cb8c4, #3cd3ad);
+}
+
+.page-4 {
+    padding: 8px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.page-4:hover {
+    background: linear-gradient(to right, #4cb8c4, #3cd3ad);
+    box-shadow: 0px 4px  8px 0px;
+    color: white;
+    transition: 0.4s;
+}
+
+.matrix {
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    border-radius: 15px;
+    border-color: #8e54e9;
+    outline: none;
+    font-family: 'Inconsolata', monospace;
+    box-shadow: 0px 2px 2px 0px;
+}
+
+.writing {
+    text-align: center;
+}
+
+section h1 {
+    color: white;
+}
+
+.login-sign-in, .login-sign-up {
+    background: linear-gradient(to right, #fc4a1a, #f7b733);
+    border: 0.3vh solid;
+    border-radius: 3vh;
+    padding: 5vh 5vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.login-sign-in:hover, .login-sign-up:hover {
+    box-shadow: 0px 20px 20px 0px;
+    transition: 0.5s;
+}
+
+#btn-sign-in{
+    margin-top: 5vh;
+    padding: 10px 40px;
+    border: 5px;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Inconsolata', monospace;
+    font-size: medium;
+    box-shadow: 0px 4px 4px 0px;
+    transition: 0.4s;
+}
+
+#btn-sign-in:hover{
+    color: white;
+    background: linear-gradient(to right, #1d976c, #93f9b9);
+    cursor: pointer;
+    box-shadow: 0px 10px 10px 0px rgba(255, 255, 255, 0.8);
+}
+
+#btn-sign-up{
+    margin-top: 5vh;
+    padding: 10px 40px;
+    border: 5px;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Inconsolata', monospace;
+    font-size: medium;
+    box-shadow: 0px 4px 4px 0px;
+    transition: 0.4s;
+}
+
+#btn-sign-up:hover{
+    color: white;
+    background: linear-gradient(to right, #1d976c, #93f9b9);
+    cursor: pointer;
+    box-shadow: 0px  10px 10px 0px rgba(255, 255, 255, 0.8);
+}
+
+#btn-sign-up2{
+    margin-top: 5vh;
+    padding: 10px 40px;
+    border: 5px;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Inconsolata', monospace;
+    font-size: medium;
+    box-shadow: 0px 4px 4px 0px;
+    transition: 0.4s;
+}
+
+#btn-sign-up2:hover{
+    color: white;
+    background: linear-gradient(to right, #1d976c, #93f9b9);
+    cursor: pointer;
+    box-shadow: 0px 10px 10px 0px rgba(255, 255, 255, 0.8);
+}
+
+.input-information {
+    margin-top: 1vh;
+    border: green;
+    padding: 5px 30px;
+    outline: none;
+    outline-style: solid;
+    font-family: 'Inconsolata', monospace;
+}
