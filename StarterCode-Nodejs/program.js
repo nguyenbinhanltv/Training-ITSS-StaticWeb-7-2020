@@ -6,7 +6,6 @@ function main(input) {
 
   let m = Number(newInput[0]);
   let n = Number(newInput[1]);
-  console.log(m + n);
   const calFactorial = (number) => {
     let result = 1;
     for (let i = 1; i <= number; i++) {
@@ -36,7 +35,7 @@ function main(input) {
     return caseOccurred / omega;
   }
 
-  console.log(calProbability(m, n));
+  console.log(calProbability(m, n).toFixed(2));
 }
 
 module.exports = main;
