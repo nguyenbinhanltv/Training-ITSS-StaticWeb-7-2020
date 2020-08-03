@@ -38,7 +38,7 @@ function main(input) {
 
   //Tính xác suất
   const calProbability = (m, n) => {
-    const omega = calCombination(52, m, calFactorial);
+    const omega = calCombination(52, m);
     const caseOccurred = calCaseOccurred(m, n);
 
     return caseOccurred / omega;
