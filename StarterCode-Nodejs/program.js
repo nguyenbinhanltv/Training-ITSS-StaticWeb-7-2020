@@ -6,6 +6,12 @@ function main(input) {
 
   let m = Number(newInput[0]);
   let n = Number(newInput[1]);
+
+  if(m <= 0 || m > 52 || n <= 0 || n > 13) {
+    return 0;
+  }
+
+  //Tính giai thừa
   const calFactorial = (number) => {
     let result = 1;
     for (let i = 1; i <= number; i++) {
@@ -15,10 +21,12 @@ function main(input) {
     return result;
   }
 
+  //Tính tổ hợp
   const calCombination = (n, k) => {
     return (calFactorial(n) / (calFactorial(k) * calFactorial(n - k)));
   }
 
+  //Tính trường hợp có thể xảy ra
   const calCaseOccurred = (m, n) => {
     let result = 0;
     for (let i = n; i <= m - 1; i++) {
@@ -28,6 +36,7 @@ function main(input) {
     return result;
   }
 
+  //Tính xác suất
   const calProbability = (m, n) => {
     const omega = calCombination(52, m, calFactorial);
     const caseOccurred = calCaseOccurred(m, n);
